@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+function validateForm() {
+  var x = document.getElementById("pwd").value;
+  if (x == "cotw") {
+         window.open("success.html", "_blank"); 
+     } else {
+         window.open("fail.html", "_blank")
+  } 
+}
+</script>
+
+<h2>Login Form</h2>
+
+<form name="login">
+  <label for="uname">Username:</label><br>
+  <input type="text" id="uname" name="uname" value=""><br>
+  <label for="pwd">Password:</label><br>
+  <input type="password" id="pwd" name="pwd" value=""><br>
+  <button onclick="validateForm()">Login</button>
+</form>
+
+</body>
+</html>
