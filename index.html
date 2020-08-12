@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
-<body>
+<style>
+body {
+      text-align: center;
+      background-image: url('bkg.jpg')
+}
+</style>
 <script>
 function validateForm() {
   var x = document.getElementById("pwd").value;
@@ -17,10 +22,8 @@ function validateForm() {
 <form name="login">
   <label for="uname">Username:</label><br>
   <input type="text" id="uname" name="uname" value=""><br>
-  <label for="pwd">Password:</label><br>
+  <label style="text-align:center;" for="pwd">Password:</label><br>
   <input type="password" id="pwd" name="pwd" value=""><br>
   <button onclick="validateForm()">Login</button>
 </form>
-
-</body>
 </html>
