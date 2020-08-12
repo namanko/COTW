@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+function validateForm() {
+  var x = document.forms["login"]["pwd"].value;
+  if (x == "Saraswathi Nair") {
+         window.open(
+         "file:///C:/Users/Prashant/Desktop/success.html", "_blank"); 
+     }
+}
+</script>
+
+<h2>Login Form</h2>
+
+<form name="login">
+  <label for="uname">Username:</label><br>
+  <input type="text" id="uname" name="uname" value=""><br>
+  <label for="pwd">Password:</label><br>
+  <input type="password" id="pwd" name="pwd" value="">
+  <input type="submit" value="Login">
+</form>
+
+</body>
+</html>
