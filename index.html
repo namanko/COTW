@@ -3,14 +3,12 @@
 <body>
 <script>
 function validateForm() {
-  var x = document.forms["login"]["pwd"].value;
-  if (x == "Saraswathi Nair") {
+  var x = document.getElementById("pwd");;
+  if (x == "cotw") {
          window.open("success.html", "_blank"); 
      } else {
          window.open("fail.html", "_blank")
   } 
-}
-
 }
 </script>
 
