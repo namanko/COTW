@@ -5,8 +5,12 @@
 function validateForm() {
   var x = document.forms["login"]["pwd"].value;
   if (x == "Saraswathi Nair") {
-         window.open(success.html, "_blank"); 
-     }
+         window.open("success.html", "_blank"); 
+     } else {
+         window.open("fail.html", "_blank")
+  } 
+}
+
 }
 </script>
 
@@ -16,8 +20,8 @@ function validateForm() {
   <label for="uname">Username:</label><br>
   <input type="text" id="uname" name="uname" value=""><br>
   <label for="pwd">Password:</label><br>
-  <input type="password" id="pwd" name="pwd" value="">
-  <input type="submit" value="Login">
+  <input type="password" id="pwd" name="pwd" value=""><br>
+  <button onclick="validateForm()">Login</button>
 </form>
 
 </body>
